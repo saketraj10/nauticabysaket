@@ -1,0 +1,143 @@
+body {
+  font-family: 'Poppons', sans-serif !important;
+  font-size: 16px;
+}
+
+#language{
+  background-color: lightblue;
+}
+
+#this-page{
+  color: white;
+}
+
+#main-title {
+  text-transform: uppercase;
+}
+
+.title-heading {
+  font-size: 2em;
+}
+
+/* Default styles for all screen sizes */
+.main-img {
+  background-image: url("../image/pexels-3957616.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.log {
+  background-color: antiquewhite;
+  position: relative;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+}
+
+#log-out a:hover {
+  background-color: red;
+  ;
+}
+
+/* book language */
+.category-title {
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+
+.category-title span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+.category-title:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title+div {
+  margin-bottom: 50px;
+}
+
+#red-required {
+  color: red;
+}
+
+
+@media (min-width: 1200px) {
+  .main-img {
+    height: 675px;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-img {
+    height: 558px;
+  }
+
+  .title-heading {
+    font-size: 1.5em;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-img {
+    height: 432px;
+  }
+
+  .title-heading {
+    font-size: 1.1em;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  .navbar-brand h1 {
+   
+    padding-top: 10px;
+    font-size: 5vw;
+    /* 1vw = 1% of viewport width */
+  }
+}
+
+
+
+@media (max-width: 479px) {
+  .navbar-brand h1 {
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
